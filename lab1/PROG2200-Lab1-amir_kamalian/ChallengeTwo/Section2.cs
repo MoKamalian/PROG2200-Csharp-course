@@ -37,13 +37,14 @@ namespace Lab1
                     Console.WriteLine("Please enter new passcode: ");
                     passcode = Console.ReadLine();
                     Console.WriteLine("Passcode has been changed.  Goodbye :)");
-
+                    return; 
                 }
 
 
             } else {
 
                 Console.WriteLine("No nuclear launch codes for you :(");
+                return;
 
             } 
 
