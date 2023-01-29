@@ -20,28 +20,32 @@ Challenge Questions
  */ 
 
 
-namespace Lab1
-{
+namespace Lab1 {
 
     class Section1 {
         public static void Main(String[] args)
         {
             /* reading in general survey input */ 
             Console.WriteLine("What is your name? ");
-            var name = Console.ReadLine();
+            string name = Console.ReadLine();
 
             Console.WriteLine("How old are you? ");
             int age = Int32.Parse(Console.ReadLine());
 
             Console.WriteLine("What month were you born in? ");
-            var birthMonth = Console.ReadLine();
-
+            string birthMonth = Console.ReadLine();
+            
+            /* the two new questions */
             Console.WriteLine("How many children do you have? ");
             int numBirths = Int32.Parse(Console.ReadLine());
+            
+            Console.WriteLine("What is your marital status? ");
+            string maritalStatus = Console.ReadLine(); 
 
             /* Outputting information given */
-            Console.WriteLine($"\n------\nName: {name}\nAge: {age}\nMonth Born: {birthMonth}\nNumber of Births: {numBirths}");
-
+            Console.WriteLine($"\n------\nName: {name}\nAge: {age}\nMonth Born: {birthMonth}\nNumber of Births: {numBirths}" +
+                              $"\nMarital Status: {maritalStatus}");
+            
             
 
         }

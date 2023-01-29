@@ -16,25 +16,29 @@ namespace Lab1 {
             var test = "1.5";
             var outDouble = 0.0; 
             
-            Console.WriteLine("Result: {0}", parseDouble(test, out outDouble));
+            parseDouble(test, out outDouble);
+            Console.WriteLine("Result: {0}", outDouble);
             Console.WriteLine("Test type is {0}", outDouble.GetType());
 
             test = "Ronan";
             outDouble = 0.0;
             
-            Console.WriteLine("Result: {0}", parseDouble(test, out outDouble));
-            Console.WriteLine("Test value is {0}", outDouble);
+            parseDouble(test, out outDouble);
+            Console.WriteLine("Result: {0}", outDouble);
+            Console.WriteLine("Test value is {0}", outDouble.GetType());
 
         }
 
-        public static double parseDouble(string input, out double num) {
+        public static bool parseDouble(string input, out double num) {
             try {
                 num = Double.Parse(input);
+                Console.WriteLine(true);
+                return true;
             } catch (Exception e) {
-                return num = 0;
+                num = 0.0;
+                Console.WriteLine(false);
+                return false; 
             }
-
-            return num; 
         }
         
     }

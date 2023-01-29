@@ -29,10 +29,11 @@ namespace Lab1 {
             Console.WriteLine("Please enter the number of students: ");
             var studentsInput = Console.ReadLine();
             Int32 numStudents = 0;
+            
             /* parsing of number of students input */ 
             try {
                 if (!Int32.TryParse(studentsInput, out numStudents)) {
-                    throw new MyCustomException("Not a number");
+                    throw new MyCustomException("Not a number"); /* custom exception */
                 }
 
             } catch (MyCustomException mce) {

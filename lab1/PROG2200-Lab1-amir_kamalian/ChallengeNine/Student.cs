@@ -7,7 +7,8 @@
 
 
 namespace Lab1 {
-
+    
+    /* student inherits from member and initializes name */
     public class Student: Member, IGraduate {
 
         public Student(string name) : base(name) {}

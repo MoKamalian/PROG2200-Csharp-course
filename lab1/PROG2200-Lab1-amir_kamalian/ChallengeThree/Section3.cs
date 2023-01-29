@@ -17,17 +17,15 @@ namespace lab1
             /* count up from 1-10 and then from 10-1 and 
              do this five times */
             for(int j=0; j<5; j++) {
-                for(int i=1; i<=20; i++)
-                {
-
-                    if(i>=10)
-                    {
-                        int num = (10 * 20) - i; 
+                for(int i=1; i<=20; i++) {
+                    if(i>=10) {
+                        int num = 20 - i; /* counting down when i passes 10 */
                         Console.WriteLine($"{num}");
+                    } else {
+                        Console.WriteLine($"{i}");
                     }
-         
-                }
-            }
+                } //end inner for loop 
+            } // end outer for loop 
 
         }
 
