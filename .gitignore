@@ -396,3 +396,15 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# other
+**/.DS_Store
+**/.idea/
+**/*.tgz
+**/*.zip
+*.tgz
+*.zip
+
+
+
+
